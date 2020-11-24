@@ -10,5 +10,10 @@ int main() {
 	getline(cin, str);
 	outFile << str;
 	outFile.close();
+	ifstream inFile;
+	inFile.open("my_file.txt");
+	string str1;
+	getline(inFile, str1);
+	cout << str1;
 	return 0;
 }
